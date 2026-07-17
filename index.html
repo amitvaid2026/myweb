@@ -30,12 +30,16 @@
     </style>
 </head>
 <body>
-
-<div class="selector-container">
+<table align="center" border: 1px solid black;>
+  <tr>
+    <td><br><br><br><br><br><br><br><img src="Sendmychoice_Front_logo.png" alt="Send my Choice"></td>
+  </tr>
+<tr>
+<td><div class="selector-container">
     <!-- Country Dropdown -->
     <select id="country" onchange="updateStates()">
         <option value="">Select Country</option>
-        <option value="US">United States</option>
+        <!-- <option value="US">United States</option> --->
         <option value="IN">India</option>
     </select>
 
@@ -56,44 +60,58 @@
 
     <!-- Go Button -->
     <button id="goBtn" onclick="navigateToUrl()" disabled>Go</button>
-</div>
+</div></td>
+</tr>
+</table>
+
 
 <script>
 // Hierarchical data structure with final destination URLs
 const locationData = {
-    "US": {
-        "New York": {
-            "NYC": {
-                "Manhattan": "https://example.com",
-                "Brooklyn": "https://example.com"
-            },
-            "Buffalo": {
-                "Downtown": "https://example.com"
-            }
-        },
-        "California": {
-            "Los Angeles": {
-                "Hollywood": "https://example.com",
-                "Downtown LA": "https://example.com"
-            }
-        }
-    },
     "IN": {
-        "Maharashtra": {
-            "Mumbai": {
-                "Colaba": "https://example.com",
-                "Bandra": "https://example.com"
-            },
-            "Pune": {
-                "Koregaon Park": "https://example.com"
-            }
-        },
         "Delhi": {
-            "New Delhi": {
-                "Connaught Place": "https://en.wikipedia.org/wiki/Connaught_Place,_New_Delhi",
-                "Saket": "https://example.com"
+            "Artificial Jewellery": {
+                "Company Name": "http://sendmychoice.com",
+            },
+            "Ayurvedic & Herbals": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Medical Equipment": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Electronics": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Gifts": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Toys": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Cosmetics & Accessories": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Computer & Accessories": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Garments & Apparels": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Groceries": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Books": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Pickles": {
+                "Company Name": "http://sendmychoice.com"
+            },
+"Furniture & Crafts": {
+                "Company Name": "http://sendmychoice.com"
             }
+
         }
+
     }
 };
 
