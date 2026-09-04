@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - Send My Choice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            flex: 1;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Highlight style for the best value/popular plan */
+        .pricing-card.popular {
+            border: 2px solid #007bff;
+            transform: scale(1.03);
+        }
+
+        .pricing-card.popular:hover {
+            transform: scale(1.03) translateY(-5px);
+        }
+
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 20px;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: #777;
+            font-weight: 400;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .features-list li {
+            padding: 10px 0;
+            color: #555;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Checkmark icon using pure CSS */
+        .features-list li::before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .features-list li.disabled {
+            color: #bbb;
+        }
+
+        .features-list li.disabled::before {
+            content: "✕";
+            color: #dc3545;
+        }
+        .bottom-link {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .cta-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .pricing-card.popular .cta-btn {
+            background-color: #007bff;
+        }
+
+        .cta-btn:hover {
+            background-color: #111;
+        }
+
+        .pricing-card.popular .cta-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Breakpoint for Mobile Devices */
+        @media (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .pricing-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            .pricing-card.popular {
+                transform: none;
+                margin: 20px 0;
+            }
+            .pricing-card.popular:hover {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #FCE5E5;">
+
+<div class="header">
+<img src="Sendmychoice_Front_logo_pricing.png" alt="Send my Choice">
+        <h2>Choose the Right Plan for Your Business</h2>
+<a href="index.html">Home</a>
+    </div>
+    <div class="pricing-container">
+
+        <!-- Growth Plan (Popular) -->
+        <div class="pricing-card popular">
+            <div class="badge">Most Popular</div>
+            <div>
+                <div class="plan-name">Standard</div>
+                <div class="price">&#8377;250<span>/mo</span></div>
+                <ul class="features-list">
+                    <li>To be Linked in Category</li>
+                    <li>Unlimited Hits</li>
+		    <li>Contact to Support</li>                    
+                    <li>Search Engine Optimisation</li>
+                    <li class="disabled">Commission on every sale</li>
+                    <li class="disabled">Dashboard Reports</li>
+                </ul>
+            </div>
+            <a href="contact.html" class="cta-btn">Choose Standard</a>
+        </div>
+
+        
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+            <div>
+                <div class="plan-name">Shared Basic</div>
+                <div class="price">&#8377;35499<span>/year</span></div>
+                <ul class="features-list">
+                    <li>E-Commerce Online Store</li>
+                    <li>1000 products</li>
+                    <li>24/7 Support</li>
+<li>Unlimited Hits</li>
+ <li>Search Engine Optimisation</li>
+		    <li>1.5% Payment Gateway fees</li>	                    
+<li>1% Commission on every sale</li>
+<li class="disabled">Dashboard Reports</li>
+
+                </ul>
+            </div>
+            <a href="contact.html" class="cta-btn">Shared Basic</a>
+        </div>
+
+        <!-- Advanced Plan -->
+        <div class="pricing-card">
+            <div>
+                <div class="plan-name">Privilege</div>
+                <div class="price">&#8377;25499<span>/mo</span></div>
+                <ul class="features-list">
+		    <li>E-Commerce Online Store</li>
+                    <li>Category Ownership with Country Level Franchise</li>
+                    <li>Search Engine Optimisation</li>
+                    <li>Unlimited Hits</li>
+                    <li>24/7 Support</li>                    
+		    <li>Unlimited Products</li>
+		    <li>1.5% Payment Gateway fees</li>
+		    <li>Dashboard Reports</li>
+                    <li class="disabled">Commission on Every Sale</li>
+</ul>
+            </div>
+            <a href="contact.html" class="cta-btn">Get Privilege Plan</a>
+        </div>
+    </div>
+
+</body>
+</html>
