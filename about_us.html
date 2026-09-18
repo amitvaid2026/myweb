@@ -38,7 +38,7 @@
 
         }
 
-@media (max-width: 368px) {
+@media (max-width: 100%) {
         .container2 {
 
 	background-image: url('about_us_bg_top_mob.jpg');
@@ -51,6 +51,11 @@
 
   	/* Scale the image to completely cover the div while maintaining aspect ratio */
   	background-size: cover;
+
+    /* 5. Force the div to fill the mobile viewport height and width */
+    width: 100%;
+    min-height: 100vh; 
+
         }
 }
 	.container {
