@@ -27,7 +27,7 @@
   	background-repeat: no-repeat;
 
   	/* Center the image within the element */
-  	background-position: center;
+  	background-position: center center;
 
   	/* Scale the image to completely cover the div while maintaining aspect ratio */
   	background-size: cover;
@@ -38,6 +38,21 @@
 
         }
 
+@media (max-width: 768px) {
+        .container2 {
+
+	background-image: url('about_us_bg_top.jpg');
+
+  	/* Prevent the image from repeating if it is smaller than the div */
+  	background-repeat: no-repeat;
+
+  	/* Center the image within the element */
+  	background-position: center center;
+
+  	/* Scale the image to completely cover the div while maintaining aspect ratio */
+  	background-size: cover;
+        }
+}
 	.container {
 	    max-width: 1200px;
             margin: 0 auto;
@@ -265,7 +280,7 @@ SendMyChoice - Earning Faith & Making Shopping Easier.</p>
  <!--                   <p>Projects Delivered</p>  -->
  <!--               </div> -->
                 <div class="stat-item">
-                    <h3>2+</h3>
+                    <h3>12+</h3>
                     <p>Happy Clients</p>
                 </div>
                 <div class="stat-item">
