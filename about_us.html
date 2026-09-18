@@ -44,7 +44,7 @@ html, body {
   height: 360px;
         }
 
-@media (max-width: 368px) {
+@media screen and (max-width: 368px) {
         .container2 {
 
 	background-image: url('about_us_bg_top_mob.jpg');
@@ -53,13 +53,12 @@ html, body {
   	background-repeat: no-repeat;
 
   	/* Center the image within the element */
-  	background-position: center center;
+  	background-position: center top;
 
   	/* Scale the image to completely cover the div while maintaining aspect ratio */
   	background-size: cover;
 
     /* 5. Force the div to fill the mobile viewport height and width */
-    width: 100%;
     min-height: 100vh; 
 
         }
