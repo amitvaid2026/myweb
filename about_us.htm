@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Our Clients</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container2 {
+
+	background-image: url('about_us_bg_top.jpg');
+
+  	/* Prevent the image from repeating if it is smaller than the div */
+  	background-repeat: no-repeat;
+
+  	/* Center the image within the element */
+  	background-position: center;
+
+  	/* Scale the image to completely cover the div while maintaining aspect ratio */
+  	background-size: cover;
+
+  /* Ensure the div has a size so the background is visible */
+  width: 100%;
+  height: 360px; 
+
+        }
+
+	.container {
+	    max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero / Header Section */
+        .about-hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            text-align: center;
+            padding: 0px 0px;
+        }
+
+        .about-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0px;
+        }
+
+        .about-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Story Section */
+        .about-story {
+            padding: 60px 0;
+            background: #FCE5E5;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .story-content h2 {
+            font-size: 2rem;
+            color: #1e3c72;
+            margin-bottom: 20px;
+        }
+
+        .story-content p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .story-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: #EDCAA2;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: #2a5298;
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            font-size: 0.95rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Clientele Section */
+        .clients-section {
+            padding: 60px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .clients-section h2 {
+            font-size: 2rem;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        .clients-subtitle {
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .client-logo {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            width: 100%;
+            max-width: 180px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .client-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Placeholder style for logos using text. Replace with <img> tags later */
+        .client-logo span {
+            font-weight: bold;
+            color: #aaa;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+    </style>
+
+<style>
+.ticker-container {
+  overflow: hidden; /* Hides images outside the boundary */
+  width: 100%;
+  background: #fff;
+}
+
+.ticker-wrapper {
+  display: flex;
+  width: max-content;
+  animation: ticker-slide 15s linear infinite; /* Loops infinitely */
+}
+
+.ticker-wrapper img {
+  height: 60px;
+  margin: 0 40px;
+}
+
+/* Define the movement from right to left */
+@keyframes ticker-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves halfway through the duplicate track */
+  }
+}
+</style>
+
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="about-hero">
+        <div class="container2">
+            &nbsp;
+            
+        </div>
+    </header>
+
+    <!-- Company Story Section -->
+    <section class="about-story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content">
+                    <h2>Who We Are</h2>
+                                    <p align="justify">Welcome to SendMyChoice - Your destination for online shopping.<br><br>
+
+At SendMyChoice, our goal is to make shopping easier, smarter, and more accessible. We bring a variety of products and brands together on one platform, helping customers discover products they love and shop from the comfort of their homes.
+
+We believe that online shopping should be **easy, reliable, and enjoyable**. That’s why we focus on providing a user-friendly shopping experience and quality products.
+
+We are also committed to supporting emerging brands by giving them an opportunity to showcase their products and reach more customers through our platform.
+<br><br>
+<b>Our Vision</b>
+<br>
+To become a trusted online shopping platform where customers can easily find their choices and brands can grow their business.
+<br><br>
+<b>Our Mission</b>
+<br>
+To make shopping easier by connecting customers with useful products and promising brands - all in one place.
+<br><br>
+SendMyChoice - Earning Faith & Making Shopping Easier.</p>
+                </div>
+                <div>
+                    <!-- Replace with your actual image path -->
+                    <img src="image_about_us.jpeg" alt="Our Office/Team Working" height="205" width="246">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>23+</h3>
+                    <p>Years Experience</p>
+                </div>
+ <!--               \* <div class="stat-item"> -->
+ <!--                   <h3>150+</h3> -->
+ <!--                   <p>Projects Delivered</p>  -->
+ <!--               </div> -->
+                <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>7pm-10pm</h3>
+                    <p>Expert Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientele Section -->
+    <section class="clients-section">
+        <div class="container">
+            <h2>Our Trusted Clientele</h2>
+            <p class="clients-subtitle">We have the privilege of working with some of the fastest-growing brands and industry leaders.</p>
+            
+            <!-- <div class="client-grid"> -->
+                
+                <!-- Client 3 -->
+                <!-- <div class="client-logo"><span>INITECH</span></div> -->
+                <!-- Client 4 -->
+                <!-- <div class="client-logo"><span>UMBRELLA</span></div>-->
+                <!-- Client 5 -->
+                <!-- <div class="client-logo"><span>VEIDT</span></div> -->
+                <!-- Client 6 -->
+                <!-- <div class="client-logo"><span>HULK HOGAN</span></div>  -->
+            <!-- </div> -->
+        
+<div class="ticker-container">
+  <div class="ticker-wrapper">
+    <img src="shrini_logo.png" alt="SHRINI Oils">
+    <img src="vaidyak_logo.png" alt="Vaidyak Ayurveda">
+    <img src="health_and_orange_logo.png" alt="Health and Orange">
+    <!-- Duplicate images to create a seamless infinite loop effect -->
+    <img src="shrini_logo.png" alt="SHRINI Oils">
+    <img src="vaidyak_logo.png" alt="Vaidyak Ayurveda">
+    <img src="health_and_orange_logo.png" alt="Health and Orange">
+  </div>
+</div>
+
+
+    </div>
+    </section>
+
+</body>
+</html>
