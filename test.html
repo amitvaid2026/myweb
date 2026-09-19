@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The viewport tag below is REQUIRED for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Background Image Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* 1. Link your image here */
+            background-image: url('about_us_bg_top.jpg'); 
+            
+            /* 2. Center the image on the screen */
+            background-position: center center; 
+            
+            /* 3. Do not tile or repeat the image */
+            background-repeat: no-repeat; 
+            
+            /* 4. Force the image to scale to fit the container */
+            background-size: cover; 
+            
+            /* 5. Ensure the background fills the entire device height */
+            min-height: 100vh; 
+            
+            /* 6. Keeps the background locked in place while scrolling */
+            background-attachment: scroll; 
+
+            /* Styling for your content overlay */
+            font-family: sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay for text readability */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Hello Mobile!</h1>
+        <p>This background scales dynamically on mobile screens.</p>
+    </div>
+
+</body>
+</html>
