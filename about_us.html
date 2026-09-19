@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,35 +15,27 @@
         }
 
         body {
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
+            /* 1. Link your image here */
+            background-image: url('about_us_bg_top.jpg'); 
+            
+            /* 2. Center the image on the screen */
+            background-position: center top; 
+            
+            /* 3. Do not tile or repeat the image */
+            background-repeat: no-repeat; 
+            
+            /* 4. Force the image to scale to fit the container */
+            background-size: contain; 
+            
+            /* 5. Ensure the background fills the entire device height */
+            min-height: 100vh; 
+            
+            /* 6. Keeps the background locked in place while scrolling */
+            background-attachment: scroll; 
+
         }
 
-/* Ensure the body expands to fill the device screen */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-
-  background-image: url('about_us_bg_top.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-}
         .container2 {
-
-	background-image: url('about_us_bg_top.jpg');
-
-  	/* Prevent the image from repeating if it is smaller than the div */
-  	background-repeat: no-repeat;
-
-  	/* Center the image within the element */
-  	background-position: center center;
-
-  	/* Scale the image to completely cover the div while maintaining aspect ratio */
-  	background-size: cover;
 
   /* Ensure the div has a size so the background is visible */
   width: 100%;
@@ -51,17 +44,6 @@ html, body {
 
 @media screen and (max-width: 368px) {
         .container2 {
-
-	background-image: url('about_us_bg_top_mob.jpg');
-
-  	/* Prevent the image from repeating if it is smaller than the div */
-  	background-repeat: no-repeat;
-
-  	/* Center the image within the element */
-  	background-position: center top;
-
-  	/* Scale the image to completely cover the div while maintaining aspect ratio */
-  	background-size: contain;
 
     /* 5. Force the div to fill the mobile viewport height and width */
     min-height: 100vh; 
@@ -335,10 +317,8 @@ SendMyChoice - Earning Faith & Making Shopping Easier.</p>
     <img src="health_and_orange_logo.png" alt="Health and Orange">
   </div>
 </div>
-
-
-    </div>
-    </section>
+</div>
+</section>
 
 </body>
 </html>
